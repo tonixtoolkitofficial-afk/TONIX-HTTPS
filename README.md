@@ -1,66 +1,179 @@
-# 🚀 TONIX HTTPS — Installation Guide
+🚀 TONIX HTTPS — Complete Setup Guide
 
-# 📦 Clone the Repository
+A simple guide to install and run the project using Termux.
 
-First, install Git:
-\\\
-pkg update && pkg install git -y
-\\\
-Then clone the repository:
+«🔐 Important: Keep your GitHub token and API keys private. Never add real secrets to this README.»
+
+---
+
+📱 1. Update Termux
+
+pkg update && pkg upgrade -y
+
+🛠️ 2. Install Required Tools
+
+pkg install git python nano -y
+
+Check that Git and Python are installed:
+
+git --version
+python --version
+
+---
+
+📥 3. Clone the Private Repository
 
 git clone https://github.com/tonixtoolkitofficial-afk/TONIX-HTTPS.git
 
-«🔒 Note: This is a private repository. You must have permission to access it.»
-
----
-
-# 📂 Open the Project Folder
+Open the project folder:
 
 cd TONIX-HTTPS
 
-# 🐍 Install Python
+---
 
-pkg install python -y
+📦 4. Install Python Requirements
 
-# 📥 Install Project Requirements
+First, upgrade pip:
 
-If the project contains a "requirements.txt" file, run:
+python -m pip install --upgrade pip
+
+Then install project requirements:
 
 pip install -r requirements.txt
 
----
-
-# 🔑 API Key Setup"
-
-For services such as Gemini AI, never put your real API key directly in the README or source code.
-
-Use a local ".env" file instead:
-
-GEMINI_API_KEY=your_api_key_here
-
-Add ".env" to your ".gitignore" file:
-
-.env
-
-This helps keep your private keys out of GitHub.
+«If the project does not contain "requirements.txt", this command may not work.»
 
 ---
 
-# 🌐 Using the Tool
+🔑 5. Add Your Private Keys Safely
 
-Follow the commands provided by the project to configure and run the tool. Only scan websites or systems that you own or have explicit permission to test.
+Create a private ".env" file:
+
+nano .env
+
+Add your own credentials:
+
+GITHUB_TOKEN=PASTE_YOUR_TOKEN_HERE
+GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
+
+Save in Nano:
+
+1. Press CTRL + O → Press Enter
+2. Press CTRL + X to exit
 
 ---
 
-# 🔐 Important Security Notice
+🔒 6. Protect Your Private Keys
 
-Never share or upload:
+Make sure ".env" is ignored by Git:
+
+echo ".env" >> .gitignore
+
+Check your Git status:
+
+git status
+
+Your ".env" file should not appear in the files waiting to be uploaded.
+
+---
+
+▶️ 7. Run the Tool
+
+Depending on your project's main file:
+
+python main.py
+
+If your project uses a different startup file, replace "main.py" with the correct filename.
+
+---
+
+🌐 8. Website URL Input
+
+Only test websites that you own or have permission to test.
+
+Example format:
+
+https://example.com
+
+---
+
+🤖 AI Report Setup
+
+The project can use your Gemini API key from the local ".env" file to help generate and organize reports.
+
+Make sure your ".env" file contains:
+
+GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
+
+---
+
+🔄 Update the Project
+
+Download the latest changes:
+
+git pull origin main
+
+---
+
+⬆️ Save Your Changes to GitHub
+
+Check changes:
+
+git status
+
+Add changes:
+
+git add .
+
+Create a commit:
+
+git commit -m "Update project"
+
+Upload changes:
+
+git push origin main
+
+---
+
+🛠️ Extra Useful Commands
+
+See all files
+
+ls -la
+
+Go back one folder
+
+cd ..
+
+Check the current folder
+
+pwd
+
+View Git remote URL
+
+git remote -v
+
+View recent commits
+
+git log --oneline -5
+
+---
+
+🔐 Security Rules
+
+❌ Never upload:
 
 - GitHub Personal Access Tokens
-- API Keys
+- Gemini API keys
 - Passwords
-- Other secret credentials
+- ".env" files
 
-If a token has been shared accidentally, revoke it and create a new one immediately.
+If a secret is accidentally shared, revoke it and create a new one.
 
-Repository: https://github.com/tonixtoolkitofficial-afk/TONIX-HTTPS.git
+---
+
+🎉 Done!
+
+Your project is now ready to install, configure, and run from Termux.
+
+Happy Coding! 🚀
