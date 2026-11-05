@@ -22,6 +22,7 @@ import html
 import json
 import os
 import re
+import shutil
 import socket
 import ssl
 import sys
@@ -59,6 +60,34 @@ BANNER = r"""
                        TONIX HTTPS
                     WEB SECURITY TOOL
 """
+
+def print_banner():
+    """Print the banner centred for the current terminal width.
+    Wide terminal  -> the exact ASCII art, block-centred.
+    Narrow terminal (e.g. phone) -> compact boxed banner so nothing wraps."""
+    cols = shutil.get_terminal_size(fallback=(80, 24)).columns
+    lines = BANNER.strip("\n").splitlines()
+    is_art = lambda l: any(ch in l for ch in "█╔╗╚╝═║")  # noqa: E731
+    art_w = max(len(l) for l in lines if is_art(l))
+    out = []
+    if cols >= art_w:
+        pad = " " * ((cols - art_w) // 2)          # one shared pad keeps the art's shape intact
+        for l in lines:
+            if not l.strip():
+                out.append("")
+            elif is_art(l):
+                out.append(pad + l)
+            else:
+                out.append(l.strip().center(cols))  # title lines centred on their own
+    else:
+        inner = max(len("WEB SECURITY TOOL"), len("TONIX HTTPS")) + 4
+        box = ["╔" + "═" * inner + "╗",
+               "║" + "TONIX HTTPS".center(inner) + "║",
+               "║" + "WEB SECURITY TOOL".center(inner) + "║",
+               "╚" + "═" * inner + "╝"]
+        out = [""] + [b.center(cols) if cols >= len(b) else b[:cols] for b in box]
+    print(Fore.CYAN + "\n".join(out) + Style.RESET_ALL + "\n")
+
 
 # ---- API KEY SETUP (checked in this order) ---------------------------------------
 API_KEY = ""   # 1) paste your Gemini key here (private copy only), or
@@ -1342,7 +1371,7 @@ def menu(ai, sc, cache):
 # Main
 # --------------------------------------------------------------------------- #
 def main() -> int:
-    print(f"{Fore.CYAN}{BANNER}{Style.RESET_ALL}")
+    print_banner()
     if "--reset-key" in sys.argv:
         try:
             os.remove(KEY_FILE)
