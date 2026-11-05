@@ -7,40 +7,40 @@ A simple guide to install and run the project using Termux.
 ---
 
 📱 1. Update Termux
-
+```
 pkg update && pkg upgrade -y
-
+```
 🛠️ 2. Install Required Tools
-
+```
 pkg install git python nano -y
-
+```
 Check that Git and Python are installed:
-
+```
 git --version
 python --version
-
+```
 ---
 
 📥 3. Clone the Private Repository
-
+```
 git clone https://github.com/tonixtoolkitofficial-afk/TONIX-HTTPS.git
-
+```
 Open the project folder:
-
+```
 cd TONIX-HTTPS
-
+```
 ---
 
 📦 4. Install Python Requirements
 
 First, upgrade pip:
-
+```
 python -m pip install --upgrade pip
-
+````
 Then install project requirements:
-
+```
 pip install -r requirements.txt
-
+```
 «If the project does not contain "requirements.txt", this command may not work.»
 
 ---
@@ -48,14 +48,14 @@ pip install -r requirements.txt
 🔑 5. Add Your Private Keys Safely
 
 Create a private ".env" file:
-
+```
 nano .env
-
+```
 Add your own credentials:
-
+```
 GITHUB_TOKEN=PASTE_YOUR_TOKEN_HERE
 GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
-
+```
 Save in Nano:
 
 1. Press CTRL + O → Press Enter
@@ -80,9 +80,9 @@ Your ".env" file should not appear in the files waiting to be uploaded.
 ▶️ 7. Run the Tool
 
 Depending on your project's main file:
-
+```
 python main.py
-
+```
 If your project uses a different startup file, replace "main.py" with the correct filename.
 
 ---
@@ -92,9 +92,9 @@ If your project uses a different startup file, replace "main.py" with the correc
 Only test websites that you own or have permission to test.
 
 Example format:
-
+````
 https://example.com
-
+````
 ---
 
 🤖 AI Report Setup
@@ -102,17 +102,17 @@ https://example.com
 The project can use your Gemini API key from the local ".env" file to help generate and organize reports.
 
 Make sure your ".env" file contains:
-
+```
 GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
-
+```
 ---
 
 🔄 Update the Project
 
 Download the latest changes:
-
+```
 git pull origin main
-
+```
 ---
 
 ⬆️ Save Your Changes to GitHub
@@ -138,25 +138,25 @@ git push origin main
 🛠️ Extra Useful Commands
 
 See all files
-
+``
 ls -la
-
+``
 Go back one folder
-
+```
 cd ..
-
+```
 Check the current folder
-
+``
 pwd
-
+``
 View Git remote URL
-
+```
 git remote -v
-
+```
 View recent commits
-
+```
 git log --oneline -5
-
+```
 ---
 
 🔐 Security Rules
