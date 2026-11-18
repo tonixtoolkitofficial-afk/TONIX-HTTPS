@@ -1,4 +1,4 @@
-#🛡️ TONIX-HTTPS 
+# 🛡️TONIX-HTTPS 
 
 AI-Powered Website Security Scanner & Vulnerability Analysis Tool
 
@@ -10,13 +10,13 @@ AI-Powered Website Security Scanner & Vulnerability Analysis Tool
   <img src="https://img.shields.io/badge/AI-Google%20Gemini-orange">
 </p>---
 
-##📌 1. Introduction
+## 📌 1. Introduction
 
 TONIX-HTTPS is an advanced AI-powered web security assessment tool designed to scan authorized websites for potential security vulnerabilities and generate comprehensive security reports.
 
 Powered by Python and Google Gemini AI, TONIX-HTTPS helps security researchers, developers, and website administrators understand security findings, prioritize risks, and identify practical remediation strategies.
 
-##✨ Key Features
+## ✨ Key Features
 
 - 🔍 Automated website security scanning.
 - 🤖 Google Gemini AI-powered vulnerability analysis.
@@ -30,7 +30,7 @@ Powered by Python and Google Gemini AI, TONIX-HTTPS helps security researchers, 
 - 🔄 Re-run AI analysis.
 - 🌐 Scan multiple authorized targets.
 
-#📥 3. Installation Guide
+## 📥 3. Installation Guide
 
 📱 A. Termux Installation (Android)
 
@@ -60,7 +60,7 @@ python main.py
 ```
 ---
 
-🐉 B. Kali Linux Installation
+## 🐉 B. Kali Linux Installation
 
 🔘Step 1: Update system
 ```
@@ -95,7 +95,7 @@ python3 main.py
 
 ---
 
-##🔑 4. Gemini API Configuration
+### 🔑 4. Gemini API Configuration
 
 TONIX-HTTPS uses Google Gemini AI for intelligent security analysis.
 
@@ -109,7 +109,7 @@ Never upload API credentials to GitHub.
 
 ---
 
-##🚀 5. Usage Guide
+### 🚀 5. Usage Guide
 
 After installation, launch the application:
 ```
@@ -138,7 +138,7 @@ AI helps interpret findings, explain potential security implications, prioritize
 
 ---
 
-##📊 6. Scan Results
+### 📊 6. Scan Results
 
 After scanning and AI analysis, the application presents an organized security assessment.
 
@@ -174,7 +174,7 @@ AI-generated findings must be independently verified.
 
 ---
 
-##🎮 7. Interactive Menu
+###  🎮 7. Interactive Menu
 
 After the scan, TONIX-HTTPS provides an interactive menu.
 
@@ -241,7 +241,7 @@ Exit TONIX-HTTPS safely.
 
 ---
 
-##📁 8. Project Structure
+### 📁 8. Project Structure
 
 Illustrative structure (actual filenames depend on the repository):
 
@@ -259,7 +259,7 @@ TONIX-HTTPS/
 
 ---
 
-##🛠️ 9. Technologies Used
+### 🛠️ 9. Technologies Used
 
 Technology| Purpose
 Python| Core application
@@ -273,7 +273,7 @@ JSON| Structured reports
 
 ---
 
-##🔧 10. Troubleshooting
+### 🔧 10. Troubleshooting
 
 Python Not Found
 
@@ -308,7 +308,7 @@ Gemini API Error
 
 ---
 
-##🔐 11. Security & Responsible Usage
+## 🔐 11. Security & Responsible Usage
 
 TONIX-HTTPS is intended for educational, defensive, and authorized security assessments.
 
@@ -325,7 +325,7 @@ Unauthorized testing may violate applicable laws or website policies.
 
 ---
 
-##🤝 12. Contributions
+### 🤝 12. Contributions
 
 Contributions and suggestions are welcome.
 
@@ -337,13 +337,13 @@ Contributions and suggestions are welcome.
 
 ---
 
-📜 13. License
+### 📜 13. License
 
 See the repository's LICENSE file for applicable licensing terms.
 
 ---
 
-⭐ 14. Support & Feedback
+###  ⭐ 14. Support & Feedback
 
 If you find TONIX-HTTPS useful:
 
@@ -366,11 +366,11 @@ Powered by Python & Google Gemini AI
 
 </p>---
 
-Disclaimer: TONIX-HTTPS is provided for educational, defensive, and authorized security assessment purposes. It does not guarantee complete website security. Users are responsible for ensuring their testing activities are authorized.
+### Disclaimer⚠️:*TONIX-HTTPS is provided for educational, defensive, and authorized security assessment purposes. It does not guarantee complete website security. Users are responsible for ensuring their testing activities are authorized.*
 --------------
 🎉 Done!
 
-Your project is now ready to install, configure, and run from Termux.
-Happy Coding! 🚀
+*Your project is now ready to install, configure, and run from Termux.
+Happy Coding!* 🚀
 --
-develaper:@tonix
+##### develaper:@tonix
