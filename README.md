@@ -244,7 +244,7 @@ Exit TONIX-HTTPS safely.
 ### 📁 8. Project Structure
 
 Illustrative structure (actual filenames depend on the repository):
-
+```
 TONIX-HTTPS/
 │
 ├── main.py
@@ -256,7 +256,7 @@ TONIX-HTTPS/
 ├── ai/
 ├── reports/
 └── output/
-
+```
 ---
 
 ### 🛠️ 9. Technologies Used
