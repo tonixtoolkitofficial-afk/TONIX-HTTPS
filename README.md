@@ -275,31 +275,31 @@ JSON| Structured reports
 
 ### 🔧 10. Troubleshooting
 
-Python Not Found
+#### Python Not Found
 
-Termux:
-
+🔴Termux:
+```
 pkg install python -y
-
-Kali Linux:
-
+```
+🔴Kali Linux:
+```
 sudo apt install python3 -y
+```
+#### Git Not Found
 
-Git Not Found
-
-Termux:
-
+🔴Termux:
+```
 pkg install git -y
-
-Kali Linux:
-
+```
+🔴Kali Linux:
+```
 sudo apt install git -y
-
-Missing Dependencies
-
+```
+🟢Missing Dependencies
+```
 pip install -r requirements.txt
-
-Gemini API Error
+```
+### Gemini API Error
 
 - Verify your API key.
 - Check internet connectivity.
