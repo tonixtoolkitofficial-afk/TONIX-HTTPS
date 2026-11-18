@@ -89,7 +89,7 @@ pip install -r requirements.txt
 ```
 🔘Step 7: Run TONIX-HTTPS
 ```
-python3 main.py
+python3 tonixhttps.py
 ```
 «Note: The commands assume the project uses "main.py" as its entry point. Confirm the actual filename in the repository before running.»
 
@@ -113,7 +113,7 @@ Never upload API credentials to GitHub.
 
 After installation, launch the application:
 ```
-python main.py
+python tonixhttps.py
 ```
 Target Website Configuration
 
